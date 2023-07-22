@@ -34,7 +34,7 @@ while True:
     eth_window.append(eth_price[1])
     # если окно больше часа то удаляем
     if len(eth_window) > 60:
-        eth_window = eth_window[:-60]
+        eth_window = eth_window[-60:]
 
     eth_window_delta_price_value = eth_window[0] - eth_window[-1]  # на сколько в долларах изменилась цена eth
     eth_window_delta_price_percent = (eth_window_delta_price_value / eth_window[-1]) * 100  # на сколько в процентах изменилась цена eth
