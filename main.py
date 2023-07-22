@@ -19,7 +19,6 @@ while True:
 
     # если цена eth изменилась в ту же сторону, то
     if (eth_delta_price_percent != 0) and (btc_delta_price_percent != 0):
-        minus_plus = None
         # в какую сторону двигались
         if (eth_delta_price_percent > 0) and (btc_delta_price_percent > 0):
             eth_delta_price_percent -= btc_delta_price_percent
