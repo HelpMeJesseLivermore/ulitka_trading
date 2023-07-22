@@ -40,7 +40,7 @@ while True:
     eth_window_delta_price_percent = (eth_window_delta_price_value / eth_window[-1]) * 100  # на сколько в процентах изменилась цена eth
     
     if abs(eth_window_delta_price_percent) > 1:
-        print(f'Цена ETH Features изменилась на {eth_window_delta_price_percent} процентов')
+        print(f'Цена ETH Futures изменилась на {eth_window_delta_price_percent} процентов')
 
     time.sleep(60)
 
