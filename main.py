@@ -1,10 +1,10 @@
 from core.ulitka_connector import connector
 import time
 
+
 eth_window = []
 
 while True:
-
     # получить eth kline (фьючерсы)
     eth_price = connector.get_eth()
     # получить btc kline (спот)
